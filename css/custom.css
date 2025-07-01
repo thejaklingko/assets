@@ -1,0 +1,29 @@
+@import url('https://fonts.cdnfonts.com/css/montserrat-ace');
+body {
+	font-family: 'Montserrat Ace', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+/*gambar berputar*/
+.avatar {
+	-webkit-animation:avatar 3s infinite linear;
+	-moz-animation:avatar 3s infinite linear;
+}
+@-webkit-keyframes avatar {
+	0%{-webkit-transform: rotate(0deg);}
+	100%{-webkit-transform: rotate(360deg);}
+}
+@-moz-keyframes avatar {
+	0%{-moz-transform: rotate(0deg);}
+	100%{-moz-transform: rotate(360deg);}
+}
+.app-main {
+	margin-top: 56px;
+}
+.ui-autocomplete {
+	z-index: 2147483647 !important;
+}
+.ui-autocomplete-loading {
+	background:url(http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/themes/smoothness/images/ui-anim_basic_16x16.gif) no-repeat right center
+}
