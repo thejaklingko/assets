@@ -1,4 +1,6 @@
 @font-face {
   font-family: 'Rubrik';
+  font-style: normal;
+  font-weight: 400;
   src: local('Rubrik'), url('https://thejaklingko.github.io/assets/fonts/Rubrik.otf') format('otf');
 }
