@@ -25,7 +25,9 @@ jobs:
       - name: Bump tag version
         id: bump_tag
         run: |
-          IFS='.' read -r major minor patch <<<"${{ steps.get_tag.outputs.tag/v/ }}"
+          LAST_TAG="${{ steps.get_tag.outputs.tag }}"
+          STRIPPED=$(echo "$LAST_TAG" | sed 's/^v//')
+          IFS='.' read -r major minor patch <<<"$STRIPPED"
           NEW_PATCH=$((patch + 1))
           NEW_TAG="v$major.$minor.$NEW_PATCH"
           echo "new_tag=$NEW_TAG" >> $GITHUB_OUTPUT
