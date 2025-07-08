@@ -4,9 +4,7 @@ permissions:
 name: Auto Semantic Release
 
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:
 
 jobs:
   tag-release:
