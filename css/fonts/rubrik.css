@@ -1,7 +1,4 @@
 @font-face {
   font-family: 'Rubrik';
-  url: 'https://thejaklingko.github.io/assets/fonts/Rubrik.otf';
-}
-.rubrik {
-  font-family: 'Rubrik', sans-serif;
+  src: local('Rubrik'), url('https://thejaklingko.github.io/assets/fonts/Rubrik.otf') format('otf');
 }
