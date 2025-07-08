@@ -1,1 +1,12 @@
-
+@font-face {
+  font-family: 'Rubrik';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Rubrik'), url('https://thejaklingko.github.io/assets/fonts/Rubrik.otf') format('otf');
+}
+@font-face {
+  font-family: 'Montserrat Ace';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Ace'), url('https://fonts.cdnfonts.com/s/31988/Montserrat-Ace-Regular.woff') format('woff');
+}
